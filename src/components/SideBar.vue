@@ -1,13 +1,21 @@
+<script lang="ts" setup>
+//import {defineEmits} from "vue";
+
+const emits = defineEmits(['selectOption']);
+const selectOption = (isColor: boolean) =>{
+  emits("selectOption", isColor)
+}
+</script>
+
 <template>
   <VNavigationDrawer expand-on-hover rail>
     <VList>
-      <VListItem prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg" title="Git HubStuff"
+      <VListItem prepend-avatar="https://randomuser.me/api/portraits/lego/1.jpg" title="Github Stuff"
         subtitle="randomstuff@gmailcom"></VListItem>
     </VList>
     <VList density="compact" nav>
-      <VListItem prepend-icon="mdi-folder" title="My Files" value="myfiles"></VListItem>
-      <VListItem prepend-icon="mdi-account-multiple" title="Shared with me" value="shared"></VListItem>
-      <VListItem prepend-icon="mdi-star" title="Starred" value="starred"></VListItem>
+      <VListItem prepend-icon="mdi-image" base-color="purple-darken-2" title="Color Gallery" value="color" @click="selectOption(true)"></VListItem>
+      <VListItem prepend-icon="mdi-dialpad" title="Grayscale Gallery" value="gray" @click="selectOption(false)"></VListItem>
     </VList>
 
   </VNavigationDrawer>

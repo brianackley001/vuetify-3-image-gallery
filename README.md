@@ -1,3 +1,7 @@
+# Vuetify 3 Sample Project (Image Gallery)
+Credit to original source/provider:  [Laith Academy's YouTube Tutorial "The Vuetify 3 Tutorial - A Vue 3 UI Library"](https://www.youtube.com/watch?v=PzXaFXgsp60)
+
+
 # essentials
 
 ## Project setup
